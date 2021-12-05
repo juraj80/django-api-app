@@ -5,9 +5,9 @@ class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         fields = ['id', 'title', 'author', 'email']
-        
 
 
+# ** SHELL COMMANDS
 # from api_web_dev.models import Article
 # from api_web_dev.serializers import ArticleSerializer
 # from rest_framework.renderers import JSONRenderer
@@ -20,3 +20,6 @@ class ArticleSerializer(serializers.ModelSerializer):
 # serializer = ArticleSerializer(Article.objects.all(), many=True)
 # serializer.data
 
+# ** ModelSerializer 
+# serializer = ArticleSerializer()
+# print(repr(serializer))
