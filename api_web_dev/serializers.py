@@ -19,8 +19,12 @@ class ArticleSerializer(serializers.Serializer):
         return instance
 
 
-# from api_dev_app.models import Article
-# from api_dev_app.serializers import ArticleSerializer
+# from api_web_dev.models import Article
+# from api_web_dev.serializers import ArticleSerializer
 # from rest_framework.renderers import JSONRenderer
 # from rest_framework.parsers import JSONParser
 # a = Article(title="Article Title", author="Juraj Klucka", email="juraj.klucka@gmail.com")
+# a.save()
+# serializer = ArticleSerializer(a)
+# serializer.data   # returns PY dictionary
+# content = JSONRenderer().render(serializer.data)   # return JSON repre
